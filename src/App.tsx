@@ -44,50 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Here are your titles and headings</h1>
-
-      <ul className="SEOForm">
-        <li className="SEOValidation">
-          <div className="SEOValidationField">
-            <span className="SEOValidationFieldTitle">Title: </span>
-            <span className={`SEOValidationFieldStatus ${title.length < 30 || title.length > 65 ? 'Error' : 'Ok'}`}>
-              {title.length + " "}  characters
-            </span>
-          </div>
-          <div className="SEOVAlidationFieldValue">
-            {title}
-          </div>
-        </li>
-
-        <li className="SEOValidation">
-          <div className="SEOValidationField">
-            <span className="SEOValidationFieldTitle">Main Headings</span>
-            <span className={`SEOValidationFieldStatus ${headlines.length !== 1 ? 'Error' : 'Ok'}`}>
-              {headlines.length}
-            </span>
-          </div>
-          <div className="SEOVAlidationFieldValue">
-            <ul>
-              {headlines.map((headline, index) => (<li key={index}>{headline}</li>))}
-            </ul>
-          </div>
-        </li>
-
-        <li className="SEOValidation">
-          <div className="SEOValidationField">
-            <span className="SEOValidationFieldTitle">Secondary Headings</span>
-            <span className={`SEOValidationFieldStatus ${secheadlines.length === 1 ? 'Error' : 'Ok'}`}>
-              {secheadlines.length}
-            </span>
-          </div>
-          <div className="SEOVAlidationFieldValue">
-            <ul>
-              {secheadlines.map((secheadline, index) => (<li key={index}>{secheadline}</li>))}
-            </ul>
-          </div>
-        </li>
-
-      </ul>
+      
     </div>
   );
 }
